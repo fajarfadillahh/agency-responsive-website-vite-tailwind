@@ -6,6 +6,20 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ==== REUSABLE CSS CLASS ==== */
+.section {
+  @apply pt-24 pb-12;
+}
+.section-title {
+  @apply font-title font-bold text-primary leading-title mb-2;
+}
+.section-text {
+  @apply text-grey leading-text;
+}
+.section-button {
+  @apply flex justify-center py-4 px-6 bg-red rounded-[.5rem] text-white font-medium;
+}
+
 /* ==== HEADER MENU AT MOBILE VERSION ==== */
 @media screen and (max-width: 968px) {
   .header__menu {

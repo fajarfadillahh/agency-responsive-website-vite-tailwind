@@ -18,6 +18,10 @@ module.exports = {
       red: "#db4a87",
       white: "#fff",
     },
+    lineHeight: {
+      title: 1.5,
+      text: 1.87,
+    },
     container: {
       center: true,
     },
