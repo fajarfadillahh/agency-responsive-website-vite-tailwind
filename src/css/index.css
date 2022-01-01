@@ -5,3 +5,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* ==== HEADER MENU AT MOBILE VERSION ==== */
+@media screen and (max-width: 968px) {
+  .header__menu {
+    @apply fixed w-[80%] h-full top-0 -right-full grid grid-rows-[repeat(2,_max-content)] gap-y-8 py-8 bg-white shadow-[-1px_0_8px_rgba(52,61,72,.25)] transition-all duration-500;
+  }
+}
+.show-menu {
+  @apply right-0;
+}
+
+/* ==== HEADER ACTIVE LINK ==== */
+.header__link.active-link {
+  @apply relative bg-[#f8f8f8];
+}
+.header__link.active-link::before {
+  @apply absolute content-[""] w-[2px] h-full top-0 left-0 bg-red;
+}

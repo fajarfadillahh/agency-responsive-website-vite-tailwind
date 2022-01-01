@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -16,8 +16,179 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <h1 class="text-purple-500 text-2xl text-center font-bold">Hello World!</h1>
+  <body class="mt-24 font-text font-reguler">
+    <!-- ==== HEADER SECTION ==== -->
+    <header
+      class="
+        header
+        fixed
+        w-full
+        h-24
+        top-0
+        left-0
+        bg-white
+        z-50
+        transition-all
+        duration-500
+      "
+      id="header"
+    >
+      <nav
+        class="
+          header__nav
+          container
+          px-4
+          h-full
+          flex
+          justify-between
+          items-center
+        "
+      >
+        <a href="#" class="header__logo inline-flex items-center gap-x-3">
+          <img src="./src/img/icon.png" alt="" class="header__logo-icon w-7" />
+          <span class="header__logo-text text-[17px] text-title font-bold"
+            >Endemic.</span
+          >
+        </a>
+
+        <div class="header__menu" id="header-menu">
+          <div class="header__data flex justify-between items-center ml-8 mr-4">
+            <a href="#" class="header__logo inline-flex items-center gap-x-3">
+              <img
+                src="./src/img/icon.png"
+                alt=""
+                class="header__logo-icon w-7"
+              />
+              <span class="header__logo-text text-[17px] text-title font-bold"
+                >Endemic.</span
+              >
+            </a>
+
+            <div
+              class="
+                header__close
+                inline-flex
+                text-[1.5rem] text-title
+                cursor-pointer
+              "
+              id="header-close"
+            >
+              <i class="bx bx-x"></i>
+            </div>
+          </div>
+
+          <ul class="header__list flex flex-col">
+            <li class="header__item">
+              <a
+                href="#"
+                class="
+                  header__link
+                  active-link
+                  flex
+                  items-center
+                  pl-8
+                  min-h-[44px]
+                  bg-transparent
+                  text-[14px] text-title
+                "
+                >Home</a
+              >
+            </li>
+            <li class="header__item">
+              <a
+                href="#"
+                class="
+                  header__link
+                  flex
+                  items-center
+                  pl-8
+                  min-h-[44px]
+                  bg-transparent
+                  text-[14px] text-title
+                "
+                >Services</a
+              >
+            </li>
+            <li class="header__item">
+              <a
+                href="#"
+                class="
+                  header__link
+                  flex
+                  items-center
+                  pl-8
+                  min-h-[44px]
+                  bg-transparent
+                  text-[14px] text-title
+                "
+                >Features</a
+              >
+            </li>
+            <li class="header__item">
+              <a
+                href="#"
+                class="
+                  header__link
+                  flex
+                  items-center
+                  pl-8
+                  min-h-[44px]
+                  bg-transparent
+                  text-[14px] text-title
+                "
+                >Blog</a
+              >
+            </li>
+            <li class="header__item">
+              <a
+                href="#"
+                class="
+                  header__link
+                  flex
+                  items-center
+                  pl-8
+                  min-h-[44px]
+                  bg-transparent
+                  text-[14px] text-title
+                "
+                >Contact</a
+              >
+            </li>
+          </ul>
+
+          <a
+            href="#"
+            class="
+              header__button
+              flex
+              justify-center
+              self-end
+              py-4
+              px-6
+              bg-red
+              rounded-[.5rem]
+              text-[14px] text-white
+              font-medium
+              mx-8
+            "
+            >Get Started</a
+          >
+        </div>
+
+        <div
+          class="
+            header__toggle
+            inline-flex
+            text-[1.5rem] text-title
+            cursor-pointer
+          "
+          id="header-toggle"
+        >
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
+    <!-- ==== HEADER SECTION ==== -->
 
     <!-- ==== MAIN JS ==== -->
     <script type="module" src="./src/js/main.js"></script>
