@@ -37,3 +37,21 @@
 .header__link.active-link::before {
   @apply absolute content-[""] w-[2px] h-full top-0 left-0 bg-red;
 }
+
+/* ==== ACCORDION FEATURES SECTION ==== */
+.accordion-open.features__accordion-item {
+  box-shadow: 0px 9px 30px rgba(69, 88, 157, 0.08);
+}
+.accordion-open .features__accordion-header,
+.accordion-open .features__accordion-content {
+  @apply bg-white;
+}
+.accordion-open .features__accordion-header {
+  border-radius: 10px 10px 0 0;
+}
+.accordion-open .features__accordion-content {
+  border-radius: 0 0 10px 10px;
+}
+.accordion-open .features__accordion-plus {
+  transform: rotate(45deg);
+}

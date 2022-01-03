@@ -16,3 +16,31 @@ const showMenu = (menuId, toggleId, closeId) => {
   }
 };
 showMenu("header-menu", "header-toggle", "header-close");
+
+// ===== ACCORDION FEATURES SECTION =====
+const accordionItems = document.querySelectorAll(".features__accordion-item");
+accordionItems.forEach((item) => {
+  const accordionHeader = item.querySelector(".features__accordion-header");
+
+  accordionHeader.addEventListener("click", () => {
+    const openItem = document.querySelector(".accordion-open");
+
+    toggleItem(item);
+
+    if (openItem && openItem !== item) {
+      toggleItem(openItem);
+    }
+  });
+});
+
+const toggleItem = (item) => {
+  const accordionContent = item.querySelector(".features__accordion-content");
+
+  if (item.classList.contains("accordion-open")) {
+    accordionContent.removeAttribute("style");
+    item.classList.remove("accordion-open");
+  } else {
+    accordionContent.style.height = accordionContent.scrollHeight + "px";
+    item.classList.add("accordion-open");
+  }
+};
