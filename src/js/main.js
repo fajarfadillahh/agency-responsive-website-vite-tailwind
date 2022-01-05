@@ -17,6 +17,17 @@ const showMenu = (menuId, toggleId, closeId) => {
 };
 showMenu("header-menu", "header-toggle", "header-close");
 
+// ===== STICKY HEADER =====
+const scrollY = window.pageYOffset;
+function stickyHeader() {
+  const header = document.getElementById("header");
+
+  this.scrollY >= 10
+    ? header.classList.add("sticky-header")
+    : header.classList.remove("sticky-header");
+}
+window.addEventListener("scroll", stickyHeader);
+
 // ===== ACCORDION FEATURES SECTION =====
 const accordionItems = document.querySelectorAll(".features__accordion-item");
 accordionItems.forEach((item) => {
