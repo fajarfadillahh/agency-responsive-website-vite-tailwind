@@ -28,6 +28,16 @@ function stickyHeader() {
 }
 window.addEventListener("scroll", stickyHeader);
 
+// ===== SCORLLUP SECTION =====
+function scrollUp() {
+  const scrollup = document.getElementById("scroll-up");
+
+  this.scrollY
+    ? scrollup.classList.add("scroll-active")
+    : scrollup.classList.remove("scroll-active");
+}
+window.addEventListener("scroll", scrollUp);
+
 // ===== ACCORDION FEATURES SECTION =====
 const accordionItems = document.querySelectorAll(".features__accordion-item");
 accordionItems.forEach((item) => {
