@@ -40,7 +40,7 @@
 
 /* ==== STICKY HEADER ==== */
 .header.sticky-header {
-  @apply bg-white h-24 shadow-[0_1px_8px_rgba(52,61,72,.25)];
+  @apply bg-white h-20 shadow-[0_1px_8px_rgba(52,61,72,.25)] lg:h-24;
 }
 
 /* ==== SCROLLUP HEADER ==== */
