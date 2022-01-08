@@ -16,14 +16,14 @@
       rel="stylesheet"
     />
   </head>
-  <body class="mt-24 font-text font-reguler">
+  <body class="mt-24 font-text font-reguler lg:mt-0">
     <!-- ==== HEADER SECTION ==== -->
     <header
-      class="header fixed w-full h-24 top-0 left-0 bg-white z-50 transition-all duration-500"
+      class="header fixed w-full h-32 top-0 left-0 bg-white z-50 transition-all duration-500"
       id="header"
     >
       <nav
-        class="header__nav container px-4 h-full flex justify-between items-center"
+        class="header__nav container px-4 h-full flex justify-between items-center xl:px-32"
       >
         <a href="#" class="header__logo inline-flex items-center gap-x-3">
           <img src="./src/img/icon.png" alt="" class="header__logo-icon w-7" />
@@ -64,35 +64,35 @@
             <li class="header__item">
               <a
                 href="#"
-                class="header__link active-link flex items-center pl-8 min-h-[44px] bg-transparent text-[14px] text-title md:min-h-0 md:pl-0"
+                class="header__link active-link flex items-center pl-8 min-h-[44px] bg-transparent text-[14px] text-title md:min-h-0 md:pl-0 lg:text-[16px]"
                 >Home</a
               >
             </li>
             <li class="header__item">
               <a
                 href="#"
-                class="header__link flex items-center pl-8 min-h-[44px] bg-transparent text-[14px] text-title md:min-h-0 md:pl-0"
+                class="header__link flex items-center pl-8 min-h-[44px] bg-transparent text-[14px] text-title md:min-h-0 md:pl-0 lg:text-[16px]"
                 >Services</a
               >
             </li>
             <li class="header__item">
               <a
                 href="#"
-                class="header__link flex items-center pl-8 min-h-[44px] bg-transparent text-[14px] text-title md:min-h-0 md:pl-0"
+                class="header__link flex items-center pl-8 min-h-[44px] bg-transparent text-[14px] text-title md:min-h-0 md:pl-0 lg:text-[16px]"
                 >Features</a
               >
             </li>
             <li class="header__item">
               <a
                 href="#"
-                class="header__link flex items-center pl-8 min-h-[44px] bg-transparent text-[14px] text-title md:min-h-0 md:pl-0"
+                class="header__link flex items-center pl-8 min-h-[44px] bg-transparent text-[14px] text-title md:min-h-0 md:pl-0 lg:text-[16px]"
                 >Blog</a
               >
             </li>
             <li class="header__item">
               <a
                 href="#"
-                class="header__link flex items-center pl-8 min-h-[44px] bg-transparent text-[14px] text-title md:min-h-0 md:pl-0"
+                class="header__link flex items-center pl-8 min-h-[44px] bg-transparent text-[14px] text-title md:min-h-0 md:pl-0 lg:text-[16px]"
                 >Contact</a
               >
             </li>
@@ -100,7 +100,7 @@
 
           <a
             href="#"
-            class="header__button flex justify-center self-end py-4 px-6 bg-red rounded-[.5rem] text-[14px] text-white font-medium mx-8 md:mx-0"
+            class="header__button flex justify-center self-end py-4 px-6 bg-red rounded-[.5rem] text-[14px] text-white font-medium mx-8 md:mx-0 lg:text-[16px]"
             >Get Started</a
           >
         </div>
@@ -117,10 +117,14 @@
 
     <main class="main overflow-hidden">
       <!-- ==== HOME SECTION ==== -->
-      <section class="home pt-4 pb-12">
-        <div class="home__container container px-4 grid gap-12">
-          <div class="home__content grid gap-6">
-            <div class="home__data text-center">
+      <section class="home pt-4 pb-12 lg:pt-40 lg:pb-20">
+        <div
+          class="home__container container px-4 grid gap-12 lg:grid-cols-2 xl:px-32"
+        >
+          <div
+            class="home__content grid gap-6 lg:grid-rows-[max-content] lg:content-center"
+          >
+            <div class="home__data text-center lg:text-left">
               <h1
                 class="home__title section-title text-[32px] mb-5 md:text-[42px]"
               >
@@ -138,7 +142,7 @@
                 <input
                   type="text"
                   placeholder="Enter email address"
-                  class="home__direction-input flex w-full bg-[#eff3f7] p-4 rounded-[.5rem] text-[14px] placeholder:text-[14px] placeholder:text-[#9085ad]"
+                  class="home__direction-input flex w-full bg-[#eff3f7] p-4 rounded-[.5rem] text-[14px] placeholder:text-[14px] placeholder:text-[#9085ad] lg:placeholder:text-[16px]"
                 />
                 <button
                   class="home__direction-button section-button text-[14px]"
@@ -183,7 +187,7 @@
 
       <!-- ==== SERVICES SECTION ==== -->
       <section class="services section">
-        <div class="services__container container px-4 grid gap-12">
+        <div class="services__container container px-4 grid gap-12 xl:px-32">
           <div class="services__data text-center">
             <h1 class="services__title section-title text-[28px]">
               Successful business start with great feature
@@ -198,13 +202,13 @@
           <div
             class="services__content grid gap-8 grid-cols-[repeat(auto-fit,_minmax(220px,.75fr))] justify-center"
           >
-            <div class="services__box grid gap-6 text-center">
+            <div class="services__box grid gap-6 text-center lg:flex lg:gap-6">
               <img
                 src="./src/img/services-icon-(1).png"
                 alt=""
-                class="services__box-icon w-[70px] justify-self-center"
+                class="services__box-icon w-[70px] justify-self-center lg:self-start"
               />
-              <div class="services__box-data">
+              <div class="services__box-data lg:text-left">
                 <h3
                   class="services__box-title text-[18px] text-title font-bold mb-4"
                 >
@@ -219,13 +223,13 @@
               </div>
             </div>
 
-            <div class="services__box grid gap-6 text-center">
+            <div class="services__box grid gap-6 text-center lg:flex lg:gap-6">
               <img
                 src="./src/img/services-icon-(2).png"
                 alt=""
-                class="services__box-icon w-[70px] justify-self-center"
+                class="services__box-icon w-[70px] justify-self-center lg:self-start"
               />
-              <div class="services__box-data">
+              <div class="services__box-data lg:text-left">
                 <h3
                   class="services__box-title text-[18px] text-title font-bold mb-4"
                 >
@@ -240,13 +244,13 @@
               </div>
             </div>
 
-            <div class="services__box grid gap-6 text-center">
+            <div class="services__box grid gap-6 text-center lg:flex lg:gap-6">
               <img
                 src="./src/img/services-icon-(3).png"
                 alt=""
-                class="services__box-icon w-[70px] justify-self-center"
+                class="services__box-icon w-[70px] justify-self-center lg:self-start"
               />
-              <div class="services__box-data">
+              <div class="services__box-data lg:text-left">
                 <h3
                   class="services__box-title text-[18px] text-title font-bold mb-4"
                 >
@@ -267,8 +271,12 @@
 
       <!-- ==== FEATURES SECTION ==== -->
       <section class="features section">
-        <div class="features__container container px-4 grid gap-12">
-          <div class="features__content grid gap-8">
+        <div
+          class="features__container container px-4 grid gap-12 lg:grid-cols-2 xl:px-32"
+        >
+          <div
+            class="features__content grid gap-8 lg:grid-rows-[max-content] lg:content-center lg:order-2"
+          >
             <div class="features__data text-center">
               <h1 class="features__title section-title text-[28px] mb-2">
                 Meet our exciting features that make you wow
@@ -373,7 +381,7 @@
           <img
             src="./src/img/features-image.png"
             alt=""
-            class="features__img md:w-[550px] md:justify-self-center"
+            class="features__img md:w-[550px] md:justify-self-center lg:self-center"
           />
         </div>
       </section>

@@ -8,16 +8,16 @@
 
 /* ==== REUSABLE CSS CLASS ==== */
 .section {
-  @apply pt-24 pb-12;
+  @apply pt-24 pb-12 lg:py-20;
 }
 .section-title {
   @apply font-title font-bold text-primary leading-title mb-2 md:text-[30px] md:mb-3;
 }
 .section-text {
-  @apply text-grey leading-text;
+  @apply text-grey leading-text lg:text-[16px];
 }
 .section-button {
-  @apply flex justify-center py-4 px-6 bg-red rounded-[.5rem] text-white font-medium;
+  @apply flex justify-center py-4 px-6 bg-red rounded-[.5rem] text-white font-medium lg:text-[16px];
 }
 
 /* ==== HEADER MENU AT MOBILE VERSION ==== */
@@ -40,7 +40,7 @@
 
 /* ==== STICKY HEADER ==== */
 .header.sticky-header {
-  @apply bg-white h-20 shadow-[0_1px_8px_rgba(52,61,72,.25)];
+  @apply bg-white h-24 shadow-[0_1px_8px_rgba(52,61,72,.25)];
 }
 
 /* ==== SCROLLUP HEADER ==== */
