@@ -11,7 +11,7 @@
   @apply pt-24 pb-12;
 }
 .section-title {
-  @apply font-title font-bold text-primary leading-title mb-2;
+  @apply font-title font-bold text-primary leading-title mb-2 md:text-[30px] md:mb-3;
 }
 .section-text {
   @apply text-grey leading-text;
