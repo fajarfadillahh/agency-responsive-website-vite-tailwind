@@ -32,8 +32,13 @@
           >
         </a>
 
-        <div class="header__menu" id="header-menu">
-          <div class="header__data flex justify-between items-center ml-8 mr-4">
+        <div
+          class="header__menu md:flex md:items-center md:gap-8"
+          id="header-menu"
+        >
+          <div
+            class="header__data flex justify-between items-center ml-8 mr-4 md:hidden"
+          >
             <a href="#" class="header__logo inline-flex items-center gap-x-3">
               <img
                 src="./src/img/icon.png"
@@ -53,39 +58,41 @@
             </div>
           </div>
 
-          <ul class="header__list flex flex-col">
+          <ul
+            class="header__list flex flex-col md:flex-row md:items-center md:gap-8"
+          >
             <li class="header__item">
               <a
                 href="#"
-                class="header__link active-link flex items-center pl-8 min-h-[44px] bg-transparent text-[14px] text-title"
+                class="header__link active-link flex items-center pl-8 min-h-[44px] bg-transparent text-[14px] text-title md:min-h-0 md:pl-0"
                 >Home</a
               >
             </li>
             <li class="header__item">
               <a
                 href="#"
-                class="header__link flex items-center pl-8 min-h-[44px] bg-transparent text-[14px] text-title"
+                class="header__link flex items-center pl-8 min-h-[44px] bg-transparent text-[14px] text-title md:min-h-0 md:pl-0"
                 >Services</a
               >
             </li>
             <li class="header__item">
               <a
                 href="#"
-                class="header__link flex items-center pl-8 min-h-[44px] bg-transparent text-[14px] text-title"
+                class="header__link flex items-center pl-8 min-h-[44px] bg-transparent text-[14px] text-title md:min-h-0 md:pl-0"
                 >Features</a
               >
             </li>
             <li class="header__item">
               <a
                 href="#"
-                class="header__link flex items-center pl-8 min-h-[44px] bg-transparent text-[14px] text-title"
+                class="header__link flex items-center pl-8 min-h-[44px] bg-transparent text-[14px] text-title md:min-h-0 md:pl-0"
                 >Blog</a
               >
             </li>
             <li class="header__item">
               <a
                 href="#"
-                class="header__link flex items-center pl-8 min-h-[44px] bg-transparent text-[14px] text-title"
+                class="header__link flex items-center pl-8 min-h-[44px] bg-transparent text-[14px] text-title md:min-h-0 md:pl-0"
                 >Contact</a
               >
             </li>
@@ -93,13 +100,13 @@
 
           <a
             href="#"
-            class="header__button flex justify-center self-end py-4 px-6 bg-red rounded-[.5rem] text-[14px] text-white font-medium mx-8"
+            class="header__button flex justify-center self-end py-4 px-6 bg-red rounded-[.5rem] text-[14px] text-white font-medium mx-8 md:mx-0"
             >Get Started</a
           >
         </div>
 
         <div
-          class="header__toggle inline-flex text-[1.5rem] text-title cursor-pointer"
+          class="header__toggle inline-flex text-[1.5rem] text-title cursor-pointer md:hidden"
           id="header-toggle"
         >
           <i class="bx bx-menu"></i>
