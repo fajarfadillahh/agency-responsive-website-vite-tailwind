@@ -737,7 +737,7 @@
 
       <!-- ==== BLOG SECTION ==== -->
       <section class="blog section">
-        <div class="blog__container container px-4 grid gap-12">
+        <div class="blog__container container px-4 grid gap-12 xl:px-32">
           <div class="blog__data text-center">
             <h1 class="blog__title section-title text-[28px] mb-2">
               Popular blog post we update everyday
@@ -899,11 +899,11 @@
           class="subscribe__img absolute w-full h-full top-0 left-0 object-cover object-center z-[-10]"
         />
 
-        <div class="subscribe__container container px-4">
+        <div class="subscribe__container container px-4 xl:px-32">
           <div
-            class="subscribe__content grid gap-[30px] p-[30px] bg-white rounded-2xl"
+            class="subscribe__content grid gap-[30px] p-[30px] bg-white rounded-2xl lg:grid-cols-[1fr.8fr] lg:py-[40px] lg:px-[80px]"
           >
-            <div class="subscribe__data text-center">
+            <div class="subscribe__data text-center lg:text-left">
               <h1 class="subscribe__title section-title text-[28px] mb-2">
                 Like our service? Subscribe us
               </h1>
@@ -914,11 +914,14 @@
               </p>
             </div>
 
-            <form action="" class="subscribe__direction flex flex-col gap-4">
+            <form
+              action=""
+              class="subscribe__direction flex flex-col gap-4 lg:flex-row lg:items-center"
+            >
               <input
                 type="text"
                 placeholder="Enter your email"
-                class="subscribe__direction-input flex w-full bg-[#eff3f7] p-4 rounded-[.5rem] text-[14px] placeholder:text-[14px] placeholder:text-[#9085ad]"
+                class="subscribe__direction-input flex w-full bg-[#eff3f7] p-4 rounded-[.5rem] text-[14px] placeholder:text-[14px] placeholder:text-[#9085ad] lg:text-[16px]"
               />
               <button
                 class="subscribe__direction-button section-button text-[14px]"
@@ -934,7 +937,9 @@
 
     <!-- ==== FOOTER SECTION ==== -->
     <footer class="footer pt-24">
-      <div class="footer__container container px-4 grid gap-12 md:grid-cols-2">
+      <div
+        class="footer__container container px-4 grid gap-12 md:grid-cols-2 lg:grid-cols-4 xl:px-32"
+      >
         <div class="footer__data justify-self-center">
           <a href="#" class="footer__logo inline-flex items-center gap-x-3">
             <img
@@ -946,7 +951,9 @@
               >Endemic.</span
             >
           </a>
-          <p class="footer__text text-grey text-[14px] pt-3 pb-8 leading-text">
+          <p
+            class="footer__text text-grey text-[14px] pt-3 pb-8 leading-text lg:text-[16px]"
+          >
             Lorem ipsum, dolor sit amet <br />
             consectetur adipisicing elit. <br />
             Officia, temporibus.
@@ -980,33 +987,45 @@
         </div>
 
         <div class="footer__data justify-self-center">
-          <h3 class="footer__title text-[18px] text-title font-bold mb-4">
+          <h3
+            class="footer__title text-[18px] text-title font-bold mb-4 lg:text-[20px]"
+          >
             About Us
           </h3>
 
           <ul>
             <li class="footer__item mb-3">
-              <a href="#" class="footer__link text-[14px] text-grey"
+              <a
+                href="#"
+                class="footer__link text-[14px] text-grey lg:text-[16px] lg:hover:underline lg:hover:text-red"
                 >Support center</a
               >
             </li>
             <li class="footer__item mb-3">
-              <a href="#" class="footer__link text-[14px] text-grey"
+              <a
+                href="#"
+                class="footer__link text-[14px] text-grey lg:text-[16px] lg:hover:underline lg:hover:text-red"
                 >Customer support</a
               >
             </li>
             <li class="footer__item mb-3">
-              <a href="#" class="footer__link text-[14px] text-grey"
+              <a
+                href="#"
+                class="footer__link text-[14px] text-grey lg:text-[16px] lg:hover:underline lg:hover:text-red"
                 >About us</a
               >
             </li>
             <li class="footer__item mb-3">
-              <a href="#" class="footer__link text-[14px] text-grey"
+              <a
+                href="#"
+                class="footer__link text-[14px] text-grey lg:text-[16px] lg:hover:underline lg:hover:text-red"
                 >Copyrights</a
               >
             </li>
             <li class="footer__item mb-3">
-              <a href="#" class="footer__link text-[14px] text-grey"
+              <a
+                href="#"
+                class="footer__link text-[14px] text-grey lg:text-[16px] lg:hover:underline lg:hover:text-red"
                 >Popular campign</a
               >
             </li>
@@ -1014,33 +1033,45 @@
         </div>
 
         <div class="footer__data justify-self-center">
-          <h3 class="footer__title text-[18px] text-title font-bold mb-4">
+          <h3
+            class="footer__title text-[18px] text-title font-bold mb-4 lg:text-[20px]"
+          >
             Our Information
           </h3>
 
           <ul>
             <li class="footer__item mb-3">
-              <a href="#" class="footer__link text-[14px] text-grey"
+              <a
+                href="#"
+                class="footer__link text-[14px] text-grey lg:text-[16px] lg:hover:underline lg:hover:text-red"
                 >Return policy</a
               >
             </li>
             <li class="footer__item mb-3">
-              <a href="#" class="footer__link text-[14px] text-grey"
+              <a
+                href="#"
+                class="footer__link text-[14px] text-grey lg:text-[16px] lg:hover:underline lg:hover:text-red"
                 >Privacy policy</a
               >
             </li>
             <li class="footer__item mb-3">
-              <a href="#" class="footer__link text-[14px] text-grey"
+              <a
+                href="#"
+                class="footer__link text-[14px] text-grey lg:text-[16px] lg:hover:underline lg:hover:text-red"
                 >Terms & conditions</a
               >
             </li>
             <li class="footer__item mb-3">
-              <a href="#" class="footer__link text-[14px] text-grey"
+              <a
+                href="#"
+                class="footer__link text-[14px] text-grey lg:text-[16px] lg:hover:underline lg:hover:text-red"
                 >Site map</a
               >
             </li>
             <li class="footer__item mb-3">
-              <a href="#" class="footer__link text-[14px] text-grey"
+              <a
+                href="#"
+                class="footer__link text-[14px] text-grey lg:text-[16px] lg:hover:underline lg:hover:text-red"
                 >Store hours</a
               >
             </li>
@@ -1048,33 +1079,45 @@
         </div>
 
         <div class="footer__data justify-self-center">
-          <h3 class="footer__title text-[18px] text-title font-bold mb-4">
+          <h3
+            class="footer__title text-[18px] text-title font-bold mb-4 lg:text-[20px]"
+          >
             My Account
           </h3>
 
           <ul>
             <li class="footer__item mb-3">
-              <a href="#" class="footer__link text-[14px] text-grey"
+              <a
+                href="#"
+                class="footer__link text-[14px] text-grey lg:text-[16px] lg:hover:underline lg:hover:text-red"
                 >Press inquiries</a
               >
             </li>
             <li class="footer__item mb-3">
-              <a href="#" class="footer__link text-[14px] text-grey"
+              <a
+                href="#"
+                class="footer__link text-[14px] text-grey lg:text-[16px] lg:hover:underline lg:hover:text-red"
                 >Social media</a
               >
             </li>
             <li class="footer__item mb-3">
-              <a href="#" class="footer__link text-[14px] text-grey"
+              <a
+                href="#"
+                class="footer__link text-[14px] text-grey lg:text-[16px] lg:hover:underline lg:hover:text-red"
                 >Directories</a
               >
             </li>
             <li class="footer__item mb-3">
-              <a href="#" class="footer__link text-[14px] text-grey"
+              <a
+                href="#"
+                class="footer__link text-[14px] text-grey lg:text-[16px] lg:hover:underline lg:hover:text-red"
                 >Images & B-roll</a
               >
             </li>
             <li class="footer__item mb-3">
-              <a href="#" class="footer__link text-[14px] text-grey"
+              <a
+                href="#"
+                class="footer__link text-[14px] text-grey lg:text-[16px] lg:hover:underline lg:hover:text-red"
                 >Permissions</a
               >
             </li>
